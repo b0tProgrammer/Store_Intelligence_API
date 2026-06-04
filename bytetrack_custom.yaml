@@ -1,0 +1,8 @@
+tracker_type: bytetrack
+track_high_thresh: 0.45   # min confidence to associate with existing track (1st stage)
+track_low_thresh: 0.10    # min confidence for 2nd-stage (lost track recovery)
+new_track_thresh: 0.50    # min confidence to start a brand-new track
+track_buffer: 300         # frames to keep a lost track alive (300 @ 30fps = 10 seconds)
+match_thresh: 0.85        # IoU threshold for track-detection matching
+fuse_score: true
+gmc_method: none          # disable global motion compensation — not needed for fixed retail cameras

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard — {{ store_id }}{% endblock %}
+
+{% block content %}
+<div class="page">
+
+  <div class="store-bar">
+    <label for="store-select">Store</label>
+    <select id="store-select">
+      <option value="{{ store_id }}" selected>{{ store_id }}</option>
+    </select>
+    <span id="last-updated" class="muted"></span>
+  </div>
+
+  <!-- KPI cards -->
+  <section class="kpi-grid">
+    <div class="card">
+      <div class="card-label">Unique Visitors</div>
+      <div class="card-value" id="kpi-visitors">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Conversion Rate</div>
+      <div class="card-value" id="kpi-conversion">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Queue Depth</div>
+      <div class="card-value" id="kpi-queue">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Abandonment Rate</div>
+      <div class="card-value" id="kpi-abandon">—</div>
+    </div>
+  </section>
+
+  <!-- Charts -->
+  <section class="charts-grid">
+    <div class="chart-box">
+      <h3>Conversion Funnel</h3>
+      <canvas id="funnel-chart" height="220"></canvas>
+    </div>
+    <div class="chart-box">
+      <h3>Zone Heatmap</h3>
+      <div id="heatmap-container" class="heatmap-grid"></div>
+    </div>
+  </section>
+
+  <!-- Anomalies -->
+  <section class="anomaly-section">
+    <h3>Active Anomalies</h3>
+    <div id="anomaly-list" class="anomaly-list">
+      <span class="muted">No anomalies detected.</span>
+    </div>
+  </section>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  window.STORE_ID = "{{ store_id }}";
+</script>
+<script src="/static/dashboard.js"></script>
+{% endblock %}

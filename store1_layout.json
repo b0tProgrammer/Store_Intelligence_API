@@ -1,0 +1,57 @@
+{
+  "store_id": "STORE_1",
+  "description": "Store 1 — rectangular layout. Entry glass doors on left wall. Top and bottom wall shelving units. FOH center floor with Fragrance and Makeup units. Cash Counter on right.",
+  "normalised": true,
+  "zones": [
+    {
+      "name": "ENTRY",
+      "description": "Entry glass doors — left strip of store",
+      "zone_type": "ENTRY",
+      "is_revenue_zone": false,
+      "x1": 0.0, "y1": 0.25, "x2": 0.08, "y2": 0.75,
+      "normalised": true
+    },
+    {
+      "name": "TOP_SHELF",
+      "description": "Top wall shelving units — Salm, TFS, Minimalis, Aqualogi, Foxtal, JC brands",
+      "zone_type": "SHELF",
+      "is_revenue_zone": true,
+      "x1": 0.08, "y1": 0.0, "x2": 0.88, "y2": 0.28,
+      "normalised": true
+    },
+    {
+      "name": "FRAGRANCE",
+      "description": "Fragrance / Lounge area — center-left of FOH floor",
+      "zone_type": "DISPLAY",
+      "is_revenue_zone": true,
+      "x1": 0.08, "y1": 0.28, "x2": 0.35, "y2": 0.65,
+      "normalised": true
+    },
+    {
+      "name": "MAKEUP",
+      "description": "Makeup Units — center of FOH floor",
+      "zone_type": "DISPLAY",
+      "is_revenue_zone": true,
+      "x1": 0.35, "y1": 0.28, "x2": 0.68, "y2": 0.65,
+      "normalised": true
+    },
+    {
+      "name": "BOTTOM_SHELF",
+      "description": "Bottom wall shelving — Fac, Mars+Nybae, Mens, Lo'real, Beaut brands",
+      "zone_type": "SHELF",
+      "is_revenue_zone": true,
+      "x1": 0.08, "y1": 0.65, "x2": 0.88, "y2": 1.0,
+      "normalised": true
+    },
+    {
+      "name": "BILLING",
+      "description": "Cash Counter — right side of store",
+      "zone_type": "BILLING",
+      "is_revenue_zone": true,
+      "x1": 0.75, "y1": 0.1, "x2": 0.92, "y2": 0.65,
+      "normalised": true
+    }
+  ],
+  "billing_zones": ["BILLING"],
+  "entry_zone": "ENTRY"
+}

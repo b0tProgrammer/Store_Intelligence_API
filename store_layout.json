@@ -1,0 +1,45 @@
+{
+  "store_id": "STORE_BLR_002",
+  "description": "Normalised zone rectangles (0.0–1.0 relative to frame size). Adjust x1/y1/x2/y2 to match your actual store layout once you have reviewed the clips.",
+  "normalised": true,
+  "zones": [
+    {
+      "name": "ENTRY",
+      "description": "Store entrance — bottom strip of frame (cameras typically face inward)",
+      "x1": 0.0, "y1": 0.75, "x2": 1.0, "y2": 1.0,
+      "normalised": true
+    },
+    {
+      "name": "SKINCARE",
+      "description": "Skincare / moisturiser aisle — left third, mid-frame",
+      "x1": 0.0, "y1": 0.45, "x2": 0.33, "y2": 0.75,
+      "normalised": true
+    },
+    {
+      "name": "MAKEUP",
+      "description": "Makeup / colour cosmetics — centre, mid-frame",
+      "x1": 0.33, "y1": 0.45, "x2": 0.67, "y2": 0.75,
+      "normalised": true
+    },
+    {
+      "name": "FRAGRANCE",
+      "description": "Fragrance / perfume — right third, mid-frame",
+      "x1": 0.67, "y1": 0.45, "x2": 1.0, "y2": 0.75,
+      "normalised": true
+    },
+    {
+      "name": "HAIRCARE",
+      "description": "Hair care aisle — left half, upper mid-frame",
+      "x1": 0.0, "y1": 0.2, "x2": 0.5, "y2": 0.45,
+      "normalised": true
+    },
+    {
+      "name": "BILLING",
+      "description": "Billing counter / checkout — right half, upper mid-frame",
+      "x1": 0.5, "y1": 0.2, "x2": 1.0, "y2": 0.45,
+      "normalised": true
+    }
+  ],
+  "billing_zones": ["BILLING"],
+  "entry_zone": "ENTRY"
+}

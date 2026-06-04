@@ -1,0 +1,58 @@
+{
+  "store_id": "STORE_2",
+  "description": "Store 2 — L-shaped layout. Entrance at bottom-center (double doors). F.O.H main retail floor. B.O.H staff area upper-right. Cash Counter upper-center. Wall units along both sides.",
+  "normalised": true,
+  "zones": [
+    {
+      "name": "ENTRY",
+      "description": "Entrance — double doors at bottom center of store",
+      "zone_type": "ENTRY",
+      "is_revenue_zone": false,
+      "x1": 0.3, "y1": 0.82, "x2": 0.7, "y2": 1.0,
+      "normalised": true
+    },
+    {
+      "name": "LEFT_WALL",
+      "description": "Left wall shelving units",
+      "zone_type": "SHELF",
+      "is_revenue_zone": true,
+      "x1": 0.0, "y1": 0.35, "x2": 0.15, "y2": 0.82,
+      "normalised": true
+    },
+    {
+      "name": "RIGHT_WALL",
+      "description": "Right wall shelving units",
+      "zone_type": "SHELF",
+      "is_revenue_zone": true,
+      "x1": 0.85, "y1": 0.35, "x2": 1.0, "y2": 0.82,
+      "normalised": true
+    },
+    {
+      "name": "CENTER_DISPLAY",
+      "description": "Central gondola and display tables on main FOH floor",
+      "zone_type": "DISPLAY",
+      "is_revenue_zone": true,
+      "x1": 0.18, "y1": 0.45, "x2": 0.82, "y2": 0.82,
+      "normalised": true
+    },
+    {
+      "name": "BILLING",
+      "description": "Cash Counter — upper center area",
+      "zone_type": "BILLING",
+      "is_revenue_zone": true,
+      "x1": 0.3, "y1": 0.28, "x2": 0.62, "y2": 0.45,
+      "normalised": true
+    },
+    {
+      "name": "BOH",
+      "description": "Back of House — staff-only area, upper section",
+      "zone_type": "STAFF",
+      "is_revenue_zone": false,
+      "x1": 0.15, "y1": 0.0, "x2": 0.88, "y2": 0.28,
+      "normalised": true
+    }
+  ],
+  "billing_zones": ["BILLING"],
+  "entry_zone": "ENTRY",
+  "staff_zones": ["BOH"]
+}
